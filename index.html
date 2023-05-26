@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Alunos</h1>
+        <p>Preencha Completamente as Informações</p>
+    </div>
+
+    <form action="#" method="post">
+        <fieldset>
+            <div class="bloco">
+                <label for="nome_aluno">Nome:</label>
+                <input type="text" name="nome_aluno" id="nome_aluno" placeholder="coloque seu nome" required>
+            </div>
+            <div class="bloco">
+                <label for="sobrenome_aluno">Sobrenome:</label>
+                <input type="text" name="sobrenome_aluno" id="sobrenome_aluno">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="bloco">
+                <label for="email_aluno">E-mail</label>
+                <input type="email" name="email_aluno" id="email_aluno">
+            </div>
+            <div class="bloco">
+                <label for="senha_aluno">Senha</label>
+                <input type="password" name="senha_aluno" id="senha_aluno">
+            </div>
+        </fieldset>
+        <fieldset>
+            <label>Qual é a sua Turma?</label>
+            <div class="letra_normal">
+                <label>
+                    <input type="radio" name="turma" id="2anem">2 A NEM
+                </label>
+                <label>
+                    <input type="radio" name="turma" id="2bnem">2 B NEM
+                </label>
+                <label>
+                    <input type="radio" name="turma" id="2ads">2 A DS
+                </label>
+                <label>
+                    <input type="radio" name="turma" id="2bds">2 B DS
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="">Qual a Matéria Preferida?</label>
+            <select name="materia_preferida" id="materia_preferida">
+                <option value="" selected disabled>Selecione</option>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="fisica">Física</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <div class="bloco">
+                <label for="">Quais os Melhores dias da Semana</label>
+                <input type="checkbox" name="escolha1" id="escolha1" value="segunda">Segunda-feira
+                <input type="checkbox" name="escolha2" id="escolha2" value="terca">Terça-feira
+                <input type="checkbox" name="escolha3" id="escolha3" value="quarta">Quarta-feira
+                <input type="checkbox" name="escolha4" id="escolha4" value="quinta">Quinta-feira
+                <input type="checkbox" name="escolha5" id="escolha5" value="sexta">Sexta-feira
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="bloco">
+                <label for="">Conte um pouco da sua história:</label>
+                <textarea name="historia" id="historia" cols="48" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
